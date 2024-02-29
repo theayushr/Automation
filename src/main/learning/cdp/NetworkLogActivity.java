@@ -26,7 +26,6 @@ public class NetworkLogActivity {
             System.out.println(req.getUrl());
         });
 
-
         devTools.addListener(Network.responseReceived(), response -> {
             Response res = response.getResponse();
 //            System.out.println(res.getUrl());
@@ -40,8 +39,5 @@ public class NetworkLogActivity {
         Thread.sleep(3000);
 
         driver.quit();
-
-
-
     }
 }

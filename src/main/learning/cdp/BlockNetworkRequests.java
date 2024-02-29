@@ -8,9 +8,7 @@ import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v122.network.Network;
 
 import com.google.common.collect.ImmutableList;
-
 public class BlockNetworkRequests {
-
     public static void main(String[] args) throws InterruptedException {
 
         ChromeDriver driver = new ChromeDriver();
@@ -30,7 +28,5 @@ public class BlockNetworkRequests {
 
         long endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
-
     }
-
 }
