@@ -5,11 +5,13 @@ import java.sql.*;
 public class JDBC {
     public static void main(String[] args) throws SQLException {
 
-        String uri = "jdbc:postgresql://localhost:5432/qat";
-        String username = "hosting-db";
-        String password = "<none>";
+        //tulusko
 
-        String sql = "select * from qat";
+        String uri = "jdbc:postgresql://localhost:5432/sysquare";
+        String username = "postgres";
+        String password = "Sysq@3338";
+
+        String sql = "select * from ";
 
         Connection con = DriverManager.getConnection(uri, username, password);
         Statement st = con.createStatement();
@@ -18,6 +20,8 @@ public class JDBC {
         rs.next();
         String name = rs.getString(1);
         System.out.println(name);
+
+        con.close();
 
     }
 }
